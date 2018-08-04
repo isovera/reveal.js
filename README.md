@@ -15,7 +15,7 @@ For details, compare the `isovera` branch to the `master` branch:
 git log master..isovera
 ```
 
-or [compare the branches on GitHub](/isovera/reveal.js/compare/master...isovera:isovera).
+or [compare the branches on GitHub](https://github.com/isovera/reveal.js/compare/master...isovera:isovera).
 
 ## Table of contents
 
