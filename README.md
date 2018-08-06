@@ -17,6 +17,9 @@ git log master..isovera
 
 or [compare the branches on GitHub](https://github.com/isovera/reveal.js/compare/master...isovera:isovera).
 
+For instructions on using Pandoc with this repository, see the README in the
+[pandoc](./pandoc) subdirectory.
+
 ## Table of contents
 
 - [Online Editor](#online-editor)
