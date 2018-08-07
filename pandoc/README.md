@@ -64,6 +64,8 @@ This is an argument, not an option.
 
 ## The example file
 
+### Head matter
+
 The example source file `example.md` starts with some header information in
 YAML format:
 
@@ -101,10 +103,13 @@ The result of those three keys is that the following lines are added to the
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700"/>
 ```
 
-The rest of the example file describes two slides:
+### The rest of the file
+
+The rest of the example file describes three or four slides, depending on how
+you count:
 
 ```markdown
-# About me
+## About me
 
 - Senior Drupal Developer at
   ![Isovera logo](../images/isovera_logo_reverse.svg){ style="border: 0; background: none; height: 50px; vertical-align: middle" }
@@ -114,12 +119,32 @@ The rest of the example file describes two slides:
 
 # About Isovera
 
-- Design. Develop. Drupal.
-- Small company in Waltham, MA
+## Nested slides
+
+- Each slide begins with an `<h2>` element (`"## "` in markdown).
+- Use an `<h1>` element (`"# "` in markdown) to group slides.
+
+## Our slogan
+
+> Design. Develop. Drupal.
 ```
 
-Each slide has an `<h1>` element and an unordered list.
-The example shows how to refer to the logo we have added to this repository,
+Each slide starts with an `<h2>` element, and you can group slides with an
+`<h1>` element.
+
+The example illustrates some markdown features: unordered lists, block
+quotations.
+It also shows how to refer to the logo we added to this repository,
 and how to create an image in its own paragraph.
 Without the trailing `\ `, Pandoc will create a `<figure>` element, using the
 alt text as the caption.
+
+### Nested slides
+
+One limitation: when you nest slides like this, the `<h1>` slide ("About
+Isovera" in the example) does not have any text besides the title.
+
+It is not necessarily bad, just a limitation.
+
+For discussion and (ugly) work-arounds, see this
+[Q&A on Stack Overflow](https://stackoverflow.com/questions/30988306/level-1-and-level-2-slides-in-reveal-js-using-pandoc).
