@@ -33,6 +33,8 @@ You could also use `php -S localhost:8000` or various other methods.
 
 There is a simple `Makefile` in the `pandoc/` directory, so you can use `make`
 instead of typing `pandoc` with all those options.
+You can also use `make my-pres.html` to generate a presentation from the
+source `my-pres.md`.
 
 ## Pandoc options
 
