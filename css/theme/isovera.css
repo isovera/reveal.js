@@ -165,6 +165,9 @@ body {
   max-height: 400px;
   word-wrap: normal; }
 
+.reveal pre.sourceCode code {
+  background-color: #fff; }
+
 .reveal table {
   margin: auto;
   border-collapse: collapse;
