@@ -294,6 +294,15 @@ body {
 /*********************************************
  * BACKGROUND IMAGE ATTRIBUTIONS
  *********************************************/
+.reveal .past .attribution,
+.reveal .future .attribution {
+  visibility: hidden;
+  opacity: 0; }
+.reveal .present .attribution {
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s ease-in;
+  transition-delay: .8s; }
 .reveal .attribution {
   background-color: rgba(0, 0, 0, 0.5);
   display: inline-block;
