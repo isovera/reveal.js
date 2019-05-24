@@ -20,6 +20,24 @@ or [compare the branches on GitHub](https://github.com/isovera/reveal.js/compare
 For instructions on using Pandoc with this repository, see the README in the
 [pandoc](./pandoc) subdirectory.
 
+### New Features
+
+#### Image attribution
+
+Reveal.js already provides for background images with the `data-background-image` attribute.
+See [Slide
+Backgrounds](https://github.com/hakimel/reveal.js#slide-backgrounds)
+in the Reveal.js docs for details and related options.
+
+We have added some CSS to handle image attribution: the `attribution` class.
+Example:
+
+```html
+<section data-background-image="images/niko-lienata-1183354-unsplash.jpg" data-background-color="#000">
+  <div class="attribution">Photo by <a href="https://unsplash.com/photos/TyxvEjPzXgw">Niko Lienata</a> on Unsplash</div>
+</section>
+```
+
 ## Table of contents
 
 - [Online Editor](#online-editor)
